@@ -1,0 +1,47 @@
+.anchor-inspector-btn {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.anchor-inspector-block-btn {
+	display: block;
+	width: 100%;
+}
+
+.anchor-inspector-btn-primary {
+	color: #fff;
+	background-color: #0275d8;
+	border-color: #0275d8;
+	cursor: pointer;
+}
+
+.anchor-inspector-btn-info {
+	color: #fff;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	cursor: pointer;
+}
+
+.anchor-inspector-badge {
+	color: #fff;
+	background-color: #333;
+	padding:2px 10px;
+	border-radius: 4px;
+}
+
+.anchor-inspector-alert {
+	background-color: red;
+}
+
+.anchor-inspector-warn {
+	background-color: orange;
+}
+
+#link-details {
+	display: none;
+}

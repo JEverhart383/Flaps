@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Flaps",
+	"version": "0.0.0",
+	"description": "Makes tabbed browsing look lame. Imagine all the benefits of tabbed browsing, without having to leave the page. Create collections of relevant links on a parent page.",
+	"browser_action": {
+		"default_icon": "myAvatar.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"contextMenus"
+	],
+	"author": "Jeff Everhart & Matt Roberts",
+	"content_scripts": [
+	{
+		"matches": ["<all_urls>"],
+		"js":["contentscript.js"]
+	}
+	]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Checker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="popup.js"></script>
+</head>
+<body style="width: 300px; height: 100%;">
+	<h1>Anchor Inspector Plugin</h1>
+	<span>Click "Gather URLs" to gather all links on the page, including A tags with an href attribute and any element using onclick to set location.href</span>
+	<br/>
+	<br/>
+	<button id="check-urls" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-primary">Gather URLs</button>
+	<hr>
+	<div id="links">
+	<h3>Mixed/Uppercase URLs: <span class="uppercaseURL anchor-inspector-badge anchor-inspector-warn">0</span></h3>	
+	<p>Any internal URLs with uppercase characters, for SEO purposes.</p>
+	<hr>
+	<h3>Other Env URLs: <span class="otherURL anchor-inspector-badge anchor-inspector-alert">0</span></h3>
+	<p>All URLs pointing to other VFB environments will AUTOMATICALLY be painted in red</p>
+	<hr>
+
+	<h3>Relative URLs: <span class="relURL anchor-inspector-badge">0</span></h3>
+	<p>Relative URLs will be painted with a green background.</p>
+	<button id="relInspectBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-primary">Inspect Relative URLs</button>
+	<button id="relDetailsBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-info" style="display:none;">Relative URL Details</button>
+	<hr>
+
+	<h3>Absolute URLs: <span class="absURL anchor-inspector-badge">0</span></h3>
+	<p>Relative URLs will be painted with a yellow background.</p>
+	<button id="absInspectBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-primary">Inspect Absolute URLs</button>
+	<button id="absDetailsBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-info" style="display:none;">Absolute URL Details</button>
+	<hr>
+
+	<h3>Hash URLs: <span class="hashURL anchor-inspector-badge">0</span></h3>
+	<p>Relative URLs will be painted with a blue background.</p>
+	<button id="hashInspectBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-primary">Inspect Hash URLs</button>
+	<button id="hashDetailsBtn" class="anchor-inspector-btn anchor-inspector-block-btn anchor-inspector-btn-info" style="display:none;">Hash URL Details</button>
+		
+	</div>
+
+	<div id="link-details">
+	<button id="backToLinks"> Back to Links </button>	
+	<h2>Link Details</h2>
+	<div id="link-details-display"></div>
+
+	</div>
+
+</body>
+</html>
